@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -470,4 +474,44 @@ body {
 
 .footer__contact-img {
     margin-right: 10px;
+}
+
+@media (max-width: 991px) {
+    .menu {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .header__top {
+        display: block;
+        text-align: center;
+    }
+    .menu {
+        margin-top: 30px;
+    }
+    .menu__list {
+        justify-content: space-evenly;
+    }
+    .menu__item + .menu__item {
+        padding-left: 0;
+    }
+    .menu__link {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 460px) {
+    .menu__list {
+        justify-content: space-between;
+    }
+    .menu__link {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 350px) {
+    .menu__link {
+        font-size: 12px;
+    }
 }
