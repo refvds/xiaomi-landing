@@ -497,11 +497,27 @@ body {
         max-width: 100%;
         margin-left: 0;
     }
+    .info {
+        padding-top: 50px;
+    }
+    .info__img {
+        display: none;
+    }
+    .info__features {
+        flex-basis: 100%;
+    }
+    .info__feature-desc {
+        max-width: 100%;
+    }
+    
 }
 
 @media (max-width: 991px) {
     .menu {
         margin-right: 0;
+    }
+    .info__features {
+        margin-left: 0;
     }
 }
 
@@ -538,6 +554,9 @@ body {
     .bike__specification-unit {
         width: 50%;
         margin-bottom: 15px;
+    }
+    .info__feature + .info__feature {
+        padding-top: 25px;
     }
 }
 
